@@ -26,7 +26,7 @@ include_once 'connection.php';
 				if($inserted == 1 ){
 					$json['success'] = 'Acount created';
 				}else{
-					$json['error'] = ' wrong password';
+					$json['error'] = 'Wrong password';
 				}
 				echo json_encode($json);
 				mysqli_close($this->connection);
